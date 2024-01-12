@@ -31,13 +31,13 @@ pip install -r requirements.txt
 python manage.py migrate
 ```
 
-* Agora você pode abrir o server com:
+* Agora você pode abrir o servidor com:
 
 ```bash
 python manage.py runserver
 ```
 
-e registre seu usuário (você pode registrar mais de um).
+e registre seu usuário (você pode registrar mais de um). Pressione CTRL+C no terminal para fechar o servidor.
 
 * Agora faça:
 
