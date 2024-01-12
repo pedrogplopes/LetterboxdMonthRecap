@@ -9,7 +9,43 @@ Letterboxd Month Recap é um projeto pessoal nascido das vontades de ter uma man
 
 ## Como rodar
 
-TBA.
+* Instale o Git em: https://www.git-scm.com/downloads, Instale o Python em: https://www.python.org/downloads/
+
+* Clone o repositório:
+
+```bash
+git clone https://github.com/pedrogplopes/LetterboxdMonthRecap.git
+```bash
+* Mude o diretório para a pasta do repositório:
+```bash
+cd “caminhodasuapasta/LetterboxdMonthRecap”
+```
+
+* Execute os comandos:
+
+```bash
+python -m venv venv
+venv\Scripts\activate
+pip install -r requirements.txt
+python manage.py migrate
+```
+
+* Agora você pode abrir o server com:
+
+```bash
+python manage.py runserver
+```
+
+e registre seu usuário (você pode registrar mais de um).
+
+* Agora faça:
+
+```bash
+python recap_generator.py
+```
+
+para gerar suas retrospectivas.
+
 
 ## Erros conhecidos
 
