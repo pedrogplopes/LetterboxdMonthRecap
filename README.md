@@ -9,7 +9,7 @@ Letterboxd Month Recap é um projeto pessoal nascido das vontades de ter uma man
 
 ## Como rodar
 
-* Instale o Git em: https://www.git-scm.com/downloads, Instale o Python em: https://www.python.org/downloads/
+* Instale o Git em: https://www.git-scm.com/downloads, Instale o Python em: https://www.python.org/downloads/.
 
 * Clone o repositório:
 
