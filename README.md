@@ -13,12 +13,12 @@ TBA.
 
 ## Erros conhecidos
 
-* Nomes de filmes muito longos ficam muito próximos às ou ultrapassam margens horizontais da imagem:
+* Nomes de filmes muito longos ficam muito próximos às (e podem ultrapassar) margens horizontais da imagem:
 
 ![flanaganfilm_december_2023_story_recap](https://github.com/pedrogplopes/LetterboxdMonthRecap/assets/93411648/eb93816b-e353-4d4a-8bf8-a4eb33d15ac6)
 
 
-* Uma grande quantidade de filmes ultrapassam as margens verticais da imagem:
+* Uma grande quantidade de filmes ficam muito próximos às (e podem ultrapassar) margens verticais da imagem:
 
 ![flanaganfilm_december_2023_feed_recap](https://github.com/pedrogplopes/LetterboxdMonthRecap/assets/93411648/70f67809-ea5d-4acf-ae26-5d4c041cfac0)
 
