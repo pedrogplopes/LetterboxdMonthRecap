@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letterboxd Monthly Recap - Login</title>
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="{% static 'logo/lbmr_logo.png' %}">
+</head>
+<body>
+    <div class="container">
+        <div class="logo-container">
+            <img src="{% static 'logo/lbmr_logo.png' %}" alt="Logo" class="logo-img" width="50">
+            <h1>Letterboxd Monthly Recap</h1>
+        </div>
+        <p class="subtext">Receive monthly e-mails with your Letterboxd film retrospective</p>
+        {% if error_message %}
+            <p style="color: red;">{{ error_message }}</p>
+        {% endif %}
+        {% if not submitted %}
+            <form action="" method="POST">
+                {% csrf_token %}
+                
+                {{ form.as_p }}
+
+                <button type="submit">Log In</button>
+            </form>
+            <p style="color: #fff;"><a href="{% url 'index' %}" style="color: #fff;">Register</a></p>
+        {% else %}
+            <p>You have successfully logged in.</p>
+        {% endif %}
+    </div>
+
+    <footer>
+        <a href="https://github.com/pedrogplopes" target="_blank">
+            <p>Made by Pedro Lopes</p>
+        </a>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

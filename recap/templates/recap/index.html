@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letterboxd Monthly Recap</title>
+    <!-- Fonts made from <a href="http://www.onlinewebfonts.com">Web Fonts</a> is licensed by CC BY 4.0 -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <link rel="shortcut icon" type="image/png" href="{% static 'logo/lbmr_logo.png' %}" >
+
+</head>
+<body>
+    <div class="container">
+        <div class="logo-container">
+            <img src="{% static 'logo/lbmr_logo.png' %}" alt="Logo" class="logo-img" width="50">
+            <h1>Letterboxd Month Recap</h1>
+        </div>
+        <p class="subtext">Generate any month's Letterboxd film retrospective</p>
+        {% if submitted %}
+            Your form was submitted. You can now generate your Recap.
+        {% else %}
+            <form action="" method="POST">
+                {% csrf_token %}
+                
+                {{ form.as_p }}
+
+                <button type="submit">Submit</button>
+            </form>
+
+            <!-- <p style="color: #fff;"><a href="{% url 'login' %}" style="color: #fff;">Log in</a></p> -->
+        {% endif %}
+    </div>
+
+    <footer>
+        <a href="https://github.com/pedrogplopes" target="_blank">
+            <p>Made by Pedro Lopes</p>
+        </a>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

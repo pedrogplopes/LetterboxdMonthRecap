@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trivia Sans', sans-serif;
+    background: #13171c;
+    background: linear-gradient(to bottom, #13171c 0%, #1f2731 50%, #13171c 100%);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    text-align: center;
+    padding: 50px;
+    flex: 1;
+}
+
+h1 {
+    font-size: 36px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.subtext {
+    font-size: 18px;
+    margin-bottom: 90px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #293241;
+    color: #fff;
+    border: 1px solid #1f2731;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4285f4;
+    color: #fff;
+    padding: 15px 20px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #345db5;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+}
+
+footer a {
+    color: inherit;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.errorlist {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+    color: #ff5252;
+    text-align: center;
+    font-size: 16px;
+}
+
+.errorlist li {
+    display: block;
+    margin: 10px 0;
+}
+
+@font-face {
+    font-family: 'TriviaSansMedium';
+    src: url('../fonts/TriviaSansMedium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-img {
+    height: auto;
+    margin-right: 6px;
+    margin-top: -12px;
+}
+
+.logo {
+    width: 50px; 
+    height: auto; 
+    margin-right: 10px; 
+}
