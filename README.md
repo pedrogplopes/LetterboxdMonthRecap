@@ -39,7 +39,7 @@ python manage.py runserver
 
 e registre seu usuário (você pode registrar mais de um). Pressione CTRL+C no terminal para fechar o servidor.
 
-* Agora faça:
+* Agora execute:
 
 ```bash
 python recap_generator.py
