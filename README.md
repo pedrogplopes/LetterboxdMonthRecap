@@ -1,5 +1,5 @@
 # Letterboxd Month Recap
-Letterboxd Month Recap é um projeto pessoal nascido das vontades de ter uma maneira de compartilhar meu diário mensal do Letterboxd com meus amigos, e de começar meu aprendizado com o framework Django. Com esse projeto, o usuário consegue gerar retrospectivas em formato de imagem de um mês de sua escolha, baseadas no diário de seu perfil no Letterboxd. A retrospectiva é gerada em duas imagens, uma de tamanho 1014x1014 ("feed") e outra de tamanho 720x1280 ("story"): 
+Letterboxd Month Recap é um projeto pessoal nascido das vontades de ter uma maneira de compartilhar meu diário mensal do Letterboxd com meus amigos, e de começar meu aprendizado com o framework Django. Com este projeto, o usuário consegue gerar retrospectivas em formato de imagem de um mês de sua escolha, baseadas no diário de seu perfil no Letterboxd. A retrospectiva é gerada em duas imagens, uma de tamanho 1014x1014 ("feed") e outra de tamanho 720x1280 ("story"): 
 
 ![schaffrillas_november_2023_story_recap](https://github.com/pedrogplopes/LetterboxdMonthRecap/assets/93411648/cb43231a-4b2c-4f46-8382-9fb1635d3be9)
 
