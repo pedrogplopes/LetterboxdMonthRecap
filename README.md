@@ -15,8 +15,9 @@ Letterboxd Month Recap é um projeto pessoal nascido das vontades de ter uma man
 
 ```bash
 git clone https://github.com/pedrogplopes/LetterboxdMonthRecap.git
-```bash
+```
 * Mude o diretório para a pasta do repositório:
+
 ```bash
 cd “caminhodasuapasta/LetterboxdMonthRecap”
 ```
