@@ -12,6 +12,8 @@ import requests
 from datetime import datetime, timezone
 from io import BytesIO
 from PIL import Image, ImageDraw, ImageFont
+from bs4 import BeautifulSoup
+from html import unescape
 
 
 
@@ -68,10 +70,14 @@ def get_user_data():
             # Using regular expression to find instances between quotes after "data-film-name" and "data-viewing-date"
             instances_between_quotes = re.findall(r'data-film-name="(.*?)"[^>]*data-viewing-date="(.*?)"', occurrence_str, re.DOTALL)
 
-            # If found a match, check if it's from the previous month
+            # If found a match, check if it's from the specified month and year
             for instance in instances_between_quotes:
-                film_name = instance[0]
+                film_name_html = instance[0]
                 viewing_date = datetime.strptime(instance[1], "%Y-%m-%d").replace(tzinfo=timezone.utc)
+
+                # Use BeautifulSoup to decode HTML entities
+                soup = BeautifulSoup(film_name_html, 'html.parser')
+                film_name = unescape(soup.get_text())
 
                 # Check if the film is from the specified month and year
                 if viewing_date.year == year and viewing_date.month == month:
