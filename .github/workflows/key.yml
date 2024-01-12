@@ -1,0 +1,5 @@
+- name: Run Tests
+    env:
+    SECRET_KEY: ${{ secrets.SECRET_KEY }}
+    run: |
+        python manage.py test
